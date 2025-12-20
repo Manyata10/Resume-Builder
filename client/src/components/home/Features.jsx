@@ -2,28 +2,27 @@ import React from 'react'
 import { Zap } from "lucide-react";
 import Title from './Title';
 
-
 const Features = () => {
     const [isHover, setIsHover] = React.useState(false);
-  return (
-    <div id='features' className='flex flex-col items-center my-10 scroll-mt-12' >
-       <>
-        <div className="flex items-center gap-2 text-sm text-green-800 bg-green-400/10 rounded-full px-6 py-1.5">
-            <Zap width={14}></Zap>
+    return (
+        <div id='features' className='flex flex-col items-center my-10 scroll-mt-12' >
+        <>
+            <div className="flex items-center gap-2 text-sm text-green-800 bg-green-400/10 rounded-full px-6 py-1.5">
+                <Zap width={14}></Zap>
+                <span>Simple Process</span>
+            </div>
+        
+            <Title title='Build Your Resume' description='Our streamlined process helps you create a professional resume in minutes with intelligent AI-powered tools and features.'/>
             
-            <span>Simple Process</span>
-        </div>
-    
-        <Title title='Build Your Resume' description='Our streamlined process helps you create a professional resume in minutes with intelligent AI-powered tools and features.'/>
             <style>{`
                 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-            
+
                 * {
                     font-family: 'Poppins', sans-serif;
                 }
             `}</style>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 gap-10 mt-12 relative">
+                
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-12 relative">
                 <div className="size-[520px] top-0 left-1/2 -translate-x-1/2 rounded-full absolute blur-[300px] -z-10 bg-[#FBFFE1]/70"></div>
                 <div className="flex flex-col items-center justify-center max-w-80">
                     <div className="p-6 aspect-square bg-violet-100 rounded-full">
@@ -63,7 +62,7 @@ const Features = () => {
             </div>
         </>
     </div>
-  )
+    )
 }
 
 export default Features
